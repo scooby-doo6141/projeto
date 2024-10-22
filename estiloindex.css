@@ -1,0 +1,218 @@
+/*Estilizando a fonte do texto e a página*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+body
+{
+width:100%;
+height:100%;
+font-family:arial;
+font: size 20px;px;	
+background-color: #122139;
+scrol-behavior:smooth;
+/*smooth
+A caixa de scroll rola de forma suave usando uma função de temporização definida pelo usuário em um período de tempo.*/
+}
+/*Resetando os valores de espaçamento*/
+*{margin: 0;
+padding: 0;}
+
+/*Estilizando os títulos*/
+h1, h2, h3, h4, h5, h6
+{
+    font-family: 'Orbitron', sans-serif;
+}
+
+/*Estilizando o hr*/
+hr
+{margin:;
+height:;
+border: ;
+}
+	
+/*Estilizando os parágrafos*/
+p
+{
+
+    color: #ffffff;
+}
+
+/*Banner*/
+.banner/*Responsivo*/
+{width:100%;
+height:300px;
+margin-top:1%;}
+
+/*Estilizando os formulários*/
+form, fieldset
+{}
+
+/*Estilizando a caixa de texto*/
+textarea
+{}
+
+/*Imagens*/
+img
+{width: 200px;
+ height: 150px;
+
+}
+
+/*Google Maps*/
+iframe
+{}
+
+/*Tamanho dos ícones de redes sociais*/
+.redes
+{}
+
+/*Banner*/
+.banner
+{width:100%;
+height:300px;
+margin-top:3%;}
+
+/*Rodapé*/
+footer{
+
+}
+
+/*MENU*/
+/*Estilizando a nav da classe menu, com resolução acima de 800 px*/
+.menu {
+width:100%;
+height: 25px;
+background-color: #222;
+font-family: Arial;
+margin-top:0%;
+position:fixed;}
+
+/*Estilizando as listas*/
+.menu ul {
+width:100%;
+list-style: none;
+position: relative;}
+
+/*Estilizando a largura de cada item da lista principal do menu*/
+.menu ul li {
+text-align: center;
+width: 25%;
+float: left;}
+
+/*Fazendo com que ao clicar no submenu ele não feche sozinho*/
+.menu li:hover ul, .menu li.over ul{
+display:block;}
+
+/*Links do menu e submenu*/
+.menu a {
+padding: 15px;
+display: block;
+text-decoration: none;
+text-align: center;
+background-color: #222;
+color: #fff;}
+
+/*Inicialmente o submenu deve ficar escondido*/
+.menu ul ul {
+position: absolute;
+visibility: hidden;}
+
+/*Ao clicar com o mouse*/
+.menu ul li:hover ul {
+visibility: visible;}
+
+/*Ao clicar com o mouse*/
+.menu a:hover {
+background-color: #f4f4f4;
+color: #555;}
+
+.menu ul ul li {
+float: none;
+border-bottom: solid 1px #ccc;}
+
+/*Cor do submenu*/
+.menu ul ul li a {
+background-color: #000000;}
+
+/*Criando o label*/
+label[for="bt_menu"]{
+padding:20px;
+padding-top:2px;
+background-color:#222;
+color:#fff;
+font-family:Arial;
+text-align:center;
+font-size:30px;
+cursor:pointer;
+height:20px;}
+
+#bt_menu{
+display:none;}
+
+label[for="bt_menu"]{
+display:none;}
+
+/*Deixando o Menu Responsivo - Menu com resolução abaixo de 800 px
+@media -  é uma função da Media Query CSS, que permite a estilização de uma página para torná-la responsiva ao usuário de acordo com sua tela.
+*/
+@media(max-width: 800px){
+label[for="bt_menu"] {
+display: block;}
+
+#bt_menu:checked ~ .menu{
+margin-left:0;}
+
+.menu{
+margin-top: 5px;
+margin-left:100%;
+background-color: #222;}
+
+.menu a {
+padding:1%;
+margin:0;
+text-decoration: none;
+text-align: center;
+background-color: #222;
+color: #fff;}
+
+.menu ul li {
+width: 100%;
+float: none;}
+
+.menu ul ul {
+position: static;
+overflow: hidden;
+max-height: 0;}
+
+.menu ul li:hover ul {
+height: auto;
+max-height: 200px;}
+
+/*Fazendo com que ao clicar no submenu ele não feche sozinho*/
+.menu li:hover ul, .menu li.over ul{
+display:block;}
+
+/*Tamanho dos ícones de redes sociais*/
+.redes/*Responsivo*/
+{width:7%;
+height:9%;}
+
+/*Google Maps*/
+iframe/*Responsivo*/
+{width:80%;
+height:300px;
+border-radius: 36px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  2px 2px 60px #ededed,
+-5px -5px 40px #ffffff;}
+
+/*Imagens*/
+img/*Responsivo*/
+{width:32%;
+max-height:40%;
+border-radius: 26px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+}
+}
+.penis{
+    font-family: 'Orbitron', sans-serif;
+}
