@@ -23,6 +23,13 @@ padding: 0;}
     border-color: #ffffff;
     border-width: 1px;
 }
+figcaption
+{
+ 		border-style: solid;
+	border-color: #ffffff;
+	border-bottom-width: 1px;	
+	border-width: 0.2px;
+}
 /*Estilizando os títulos*/
 h1, h2, h3, h4, h5, h6
 {
@@ -40,6 +47,10 @@ border: ;
 {
     width: 200px;
     height: 150px;   
+	border-style: solid;
+	border-color: #ffffff;
+	border-bottom-width: 1px;	
+	border-width: 0.2px;
 }
 /*Estilizando os parágrafos*/
 p
@@ -66,10 +77,6 @@ textarea
 img
 {width: 250px;
  height: 250px;
- border-style: solid;
-border-color: #ffffff;
-border-bottom-width: 1px;
-border-width: 0.2px;
 }
 
 /*Google Maps*/
