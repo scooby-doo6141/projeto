@@ -1,0 +1,182 @@
+:root {
+    --cor-primaria: #122139;
+    --cor-secundaria: #667f9b;
+    --cor-destaque: #dce3ee;
+    --cor-texto: #727374;
+    --cor-fundo: #122139;
+  }
+  
+  /* Estilos gerais */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+  }
+  
+  /* Estilo do Menu */
+  .menu {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+    font-family: Arial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  .menu ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu ul li {
+    position: relative;
+    text-align: center;
+  }
+  
+  .menu a {
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .menu ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    visibility: hidden;
+    background-color: #000;
+    padding: 0;
+  }
+  
+  .menu ul li:hover ul {
+    visibility: visible;
+  }
+  
+  .menu ul ul li {
+    float: none;
+    width: 100%;
+    border-bottom: solid 1px var(--cor-secundaria);
+  }
+  
+  .menu ul ul li a {
+    background-color: black;
+  }
+  
+  .menu a:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Criando o label para o menu responsivo */
+  label[for="bt_menu"] {
+    display: none;
+    padding: 15px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-fundo);
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  #bt_menu {
+    display: none;
+  }
+  
+  /* Estilo responsivo para o Menu */
+  @media (max-width: 800px) {
+    label[for="bt_menu"] {
+      display: block;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #bt_menu:checked ~ .menu {
+      display: flex;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+    }
+  
+    .menu ul li {
+      width: 100%;
+    }
+  
+    .menu ul ul {
+      position: static;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s;
+    }
+  
+    .menu ul li:hover ul {
+      max-height: 200px;
+    }
+  
+    .menu a {
+      padding: 10px;
+      text-align: center;
+    }
+  }
+   
+  /* Estilo do Formulário */
+  .form-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: var(--cor-secundaria);
+    padding: 30px;
+    border-radius: 8px;
+    color: var(--cor-fundo);
+    margin: 100px auto 0; /* margem ajustada para evitar sobreposição com o menu fixo */
+  }
+  
+  h2 {
+    color: var(--cor-destaque);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #fff;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 5px;
+    background-color: #fff;
+    color: var(--cor-texto);
+  }
+  
+  button {
+    background-color: var(--cor-destaque);
+    color: var(--cor-primaria);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  
+  button:hover {
+    background-color: var(--cor-secundaria);
+  }
+  .penis{
+    font-family: 'Orbitron', sans-serif;
+}
