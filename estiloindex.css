@@ -1,14 +1,14 @@
 /*Estilizando a fonte do texto e a página*/
 
-    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 body
 {
 width:100%;
 height:100%;
 font-family:arial;
-font: size 20px;px;	
+font: size 20px;	
 background-color: #122139;
-scrol-behavior:smooth;
+scroll-behavior:smooth;
 /*smooth
 A caixa de scroll rola de forma suave usando uma função de temporização definida pelo usuário em um período de tempo.*/
 }
@@ -19,13 +19,20 @@ padding: 0;}
 {
 	color: #ffffff;
 	font-family: 'Orbitron', sans-serif;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px;
+	margin: 15px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: transform 0.02s;
 }
+.rol:hover
+{
+	
+	transform: scale(1.05);;
+}
+
 figcaption
 {
- 		border-style: solid;
+ 	border-style: solid;
 	border-color: #ffffff;
 	border-bottom-width: 1px;	
 	border-width: 0.2px;
@@ -36,12 +43,6 @@ h1, h2, h3, h4, h5, h6
     font-family: 'Orbitron', sans-serif;
 }
 
-/*Estilizando o hr*/
-hr
-{margin:;
-height:;
-border: ;
-}
 	
 .point
 {
@@ -67,11 +68,15 @@ margin-top:1%;}
 
 /*Estilizando os formulários*/
 form, fieldset
-{}
+{
+	
+}
 
 /*Estilizando a caixa de texto*/
 textarea
-{}
+{
+
+}
 
 /*Imagens*/
 img
